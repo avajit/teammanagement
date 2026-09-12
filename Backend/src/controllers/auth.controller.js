@@ -4,7 +4,7 @@ const cookieOptions = {
   httpOnly: true,
   secure: process.env.NODE_ENV === 'production',
   sameSite: 'lax',
-  maxAge: Number(process.env.COOKIE_MAX_AGE_DAYS) * 24 * 60 * 60 * 1000,
+  maxAge: Number(process.env.COOKIE_MAX_AGE_DAYS || 7) * 24 * 60 * 60 * 1000,
 };
 
 // Register: call register service, set token as HttpOnly cookie, return message
