@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: teammanagement-backend
+    env: node
+    plan: free
+    buildCommand: npm install && npx prisma generate
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: DATABASE_URL
+        scope: shared
+      - key: JWT_SECRET
+        scope: shared
+      - key: EMAIL_USER
+        scope: shared
+      - key: EMAIL_PASS
+        scope: shared
+      - key: CLIENT_URL
+        scope: shared
+
+  - type: pserv
+    name: teammanagement-db
+    plan: free
+    ipAllowList: []
+    backupRetentionDays: 7

@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd Frontend/next-monorepo && npm run build",
+  "outputDirectory": "Frontend/next-monorepo/apps/web/.next",
+  "installCommand": "cd Frontend/next-monorepo && npm install",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_API_URL": "@next_public_api_url"
+  }
+}
