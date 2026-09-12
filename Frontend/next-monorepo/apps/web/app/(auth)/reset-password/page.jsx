@@ -68,7 +68,7 @@ function ResetPasswordForm() {
   };
 
   return (
-    <div className="w-full max-w-md rounded-xl border border-border bg-card p-8 shadow-sm">
+    <div className="w-full max-w-md rounded-xl border border-border bg-card p-6 shadow-sm sm:p-8">
       <h1 className="mb-1 text-2xl font-semibold text-foreground">Reset Password</h1>
       <p className="mb-6 text-sm text-muted-foreground">Enter your OTP and new password below</p>
 

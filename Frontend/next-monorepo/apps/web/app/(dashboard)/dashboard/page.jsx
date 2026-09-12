@@ -36,7 +36,7 @@ export default function DashboardPage() {
   const overdue = stats?.tasks?.overdue ?? 0;
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-foreground">
@@ -49,12 +49,12 @@ export default function DashboardPage() {
 
       {/* Overdue alert banner */}
       {!statsLoading && overdue > 0 && (
-        <div className="mb-6 flex items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-5 py-3.5 dark:border-red-900/40 dark:bg-red-900/10">
+        <div className="mb-6 flex flex-wrap items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 md:px-5 md:py-3.5 dark:border-red-900/40 dark:bg-red-900/10">
           <AlertTriangle className="h-4 w-4 shrink-0 text-red-500" />
           <p className="text-sm font-medium text-red-700 dark:text-red-400">
             {overdue} task{overdue > 1 ? 's are' : ' is'} overdue across your projects.
           </p>
-          <Link href="/projects" className="ml-auto text-xs font-semibold text-red-600 hover:underline dark:text-red-400">
+          <Link href="/projects" className="text-xs font-semibold text-red-600 hover:underline dark:text-red-400 sm:ml-auto">
             View projects →
           </Link>
         </div>

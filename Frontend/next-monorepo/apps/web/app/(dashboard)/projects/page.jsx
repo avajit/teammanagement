@@ -12,9 +12,9 @@ export default function ProjectsPage() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       {/* Page Header */}
-      <div className="mb-8 flex items-start justify-between">
+      <div className="mb-6 flex flex-col items-start justify-between gap-4 sm:mb-8 sm:flex-row sm:items-center">
         <div>
           <h1 className="text-2xl font-bold text-foreground">Projects</h1>
           <p className="mt-1 text-sm text-muted-foreground">

@@ -24,7 +24,7 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="w-full max-w-md rounded-xl border border-border bg-card p-8 shadow-sm">
+    <div className="w-full max-w-md rounded-xl border border-border bg-card p-6 shadow-sm sm:p-8">
       <div className="mb-6 flex flex-col items-center gap-1">
         <span className="text-xl font-bold text-primary tracking-wide">TaskManager</span>
         <h1 className="text-2xl font-semibold text-foreground">Welcome back</h1>
