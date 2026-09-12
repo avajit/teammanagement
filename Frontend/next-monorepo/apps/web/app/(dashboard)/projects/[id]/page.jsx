@@ -31,7 +31,7 @@ export default function ProjectDetailPage() {
 
   if (error) {
     return (
-      <div className="p-8">
+      <div className="p-4 md:p-8">
         <div className="flex items-center gap-3 rounded-xl border border-destructive/30 bg-destructive/10 p-6">
           <AlertCircle className="h-5 w-5 text-destructive shrink-0" />
           <p className="text-sm text-destructive">{error}</p>
@@ -43,7 +43,7 @@ export default function ProjectDetailPage() {
   if (!project) return null;
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       {/* Back button */}
       <button
         onClick={() => router.push('/projects')}
