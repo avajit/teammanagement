@@ -19,7 +19,8 @@ const errorMiddleware = (err, req, res, next) => {
 
   res.status(500).json({
     status: 'error',
-    message: 'Something went wrong. Please try again later.',
+    message: err.message || 'Something went wrong. Please try again later.',
+    code: err.code || undefined,
   });
 };
 
