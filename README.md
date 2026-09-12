@@ -9,7 +9,7 @@ A collaborative project management application built with **Next.js**, **Node.js
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Demo 
 
 > **Coming Soon!** Deploy using the guide below
 
